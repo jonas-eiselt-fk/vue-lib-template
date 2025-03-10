@@ -1,0 +1,32 @@
+{
+  "name": "vue-lib-template",
+  "private": true,
+  "version": "0.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "vite",
+    "prebuild": "rimraf -g *.tsbuildinfo dist temp",
+    "build": "vite build && npm run build:dts && npm run build:api",
+    "build:dts": "vue-tsc -b",
+    "build:api": "node api-extractor.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "3.5.13"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "7.51.1",
+    "@types/node": "20.17.16",
+    "@vitejs/plugin-vue": "5.2.1",
+    "is-ci": "4.1.0",
+    "rimraf": "6.0.1",
+    "typescript": "5.7.3",
+    "vite": "6.0.11",
+    "vue-tsc": "2.2.8"
+  }
+}
