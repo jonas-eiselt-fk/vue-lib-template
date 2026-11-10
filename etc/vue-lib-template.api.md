@@ -12,7 +12,12 @@ import { PublicProps } from 'vue';
 // Warning: (ae-forgotten-export) The symbol "__VLS_export" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
-export const MyInput: typeof __VLS_export;
+export const MyContainer: typeof __VLS_export;
+
+// Warning: (ae-forgotten-export) The symbol "__VLS_export_2" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export const MyInput: typeof __VLS_export_2;
 
 // (No @packageDocumentation comment for this package)
 
