@@ -1,6 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
+        "tsBuildInfoFile": "./temp/tsconfig.node.tsbuildinfo",
         "composite": true,
         "types": ["node"],
         "lib": ["es2023"],
@@ -9,9 +10,9 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "moduleResolution": "Node",
+        "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true,
         "noEmit": true
     },
-    "include": ["vite.config.*"]
+    "include": ["vite.config.*", "api-extractor.ts"]
 }

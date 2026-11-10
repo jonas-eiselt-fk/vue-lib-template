@@ -4,7 +4,7 @@
         "target": "es2022",
         "lib": ["es2023", "dom"],
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "rootDir": "src",
         "outDir": "temp/types",
         "declaration": true,
@@ -21,4 +21,3 @@
     },
     "include": ["src/**/*.ts", "src/**/*.vue"]
 }
-  

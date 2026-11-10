@@ -11,13 +11,13 @@ export default defineConfig({
             entry: {
                 index: "src/index.ts",
             },
-            formats: ["es", "cjs"],
+            formats: ["es"],
             cssFileName: "style",
         },
         rollupOptions: {
             output: {
                 exports: "named",
-                entryFileNames: `[format]/[name].js`,
+                entryFileNames: `[name].js`,
             },
             external: ["vue"],
         },

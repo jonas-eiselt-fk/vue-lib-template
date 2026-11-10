@@ -1,6 +1,6 @@
-const path = require("path");
-const isCI = require("is-ci");
-const { Extractor, ExtractorConfig } = require("@microsoft/api-extractor");
+import path from "node:path";
+import isCI from "is-ci";
+import { Extractor, ExtractorConfig } from "@microsoft/api-extractor";
 
 async function apiExtractor() {
     if (isCI) {

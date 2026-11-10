@@ -7,40 +7,12 @@
 import { ComponentOptionsMixin } from 'vue';
 import { ComponentProvideOptions } from 'vue';
 import { DefineComponent } from 'vue';
-import { ExtractPropTypes } from 'vue';
-import { PropType } from 'vue';
 import { PublicProps } from 'vue';
 
+// Warning: (ae-forgotten-export) The symbol "__VLS_export" needs to be exported by the entry point index.d.ts
+//
 // @public (undocumented)
-export const BaseInput: DefineComponent<    {}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
-
-// @public (undocumented)
-export const ExtendedInput: DefineComponent<    {}, {}, {}, {}, {}, ComponentOptionsMixin, DefineComponent<    {}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
-
-// @public (undocumented)
-export const FooOptions: DefineComponent<ExtractPropTypes<    {
-node: {
-type: PropType<{
-tag: string;
-label: string;
-description: string;
-}>;
-required: true;
-};
-}>, {}, {
-tag: string;
-label: string;
-description: string;
-}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<    {
-node: {
-type: PropType<{
-tag: string;
-label: string;
-description: string;
-}>;
-required: true;
-};
-}>> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
+export const MyInput: typeof __VLS_export;
 
 // (No @packageDocumentation comment for this package)
 
